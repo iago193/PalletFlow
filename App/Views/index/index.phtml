@@ -1,1 +1,50 @@
-<h1>Miniframework está funcionando!</h1>
+<section>
+    <div class="container-section">
+        <div class="sesao resultado">
+            area 1
+        </div>
+        <div class="sesao btn">
+             <form action="">
+                <button onclick="abrirModalCarregar()" type="button">Carregar</button>
+                <button onclick="abrirModalCarregar()" type="button">Descarregar</button>
+             </form>
+        </div>
+    </div>
+</section>
+
+<div id="container-model">
+  <h2>Carregar</h2>
+  <form action="">
+    <div class="form-group">
+      <input type="text" id="numero-carrego" placeholder=" " />
+      <label for="numero-carrego">Nº Carrego</label>
+    </div>
+    <div class="form-group">
+      <select id="conferente" >
+        <option value="" disabled selected>Conferente/Responsavel</option>
+        <option value="teste2">Teste 2</option>
+        <option value="teste3">Teste 3</option>
+        <option value="teste4">Teste 4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <select id="motorista" >
+        <option value="" disabled selected>Motorista</option>
+        <option value="teste2">Teste 2</option>
+        <option value="teste3">Teste 3</option>
+        <option value="teste4">Teste 4</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <input type="date" id="data" placeholder=" " />
+    </div>
+    <div class="form-group">
+      <input type="number" id="quantidade-paletes" placeholder=" " />
+      <label for="quantidade-paletes">Quantidade paletes</label>
+    </div>
+    <div class="form-group">
+        <button >Enviar</button>
+        <button style="background-color: #007bff86" onclick="fecharModalCarregar()" type="button">Cancelar</button>
+    </div>
+  </form>
+</div>

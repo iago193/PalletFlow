@@ -1,0 +1,135 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+}
+
+section .container-section {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sesao {
+    width: 40%;
+    margin: 10px;
+}
+
+.btn button {
+    width: 90%;
+    height: 5em;
+    margin: 10px;
+    font-size: 4em;
+    border-radius: 10px;
+    border: none;
+    background-color: aqua;
+    color: white;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 206, 206);
+}
+
+.btn form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resultado {
+    border-radius: 20px;
+    background-color: #e4e4e4;
+    height: 90vh;
+    display: flex;
+    margin: auto 0;
+
+}
+
+#container-model {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  width: 20em;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 1.5em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+#container-model h2 {
+  margin-bottom: 1em;
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+/* input estilos */
+.form-group input, select {
+  width: 100%;
+  padding: 1.2em 0.6em 0.3em 0.6em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  transition: border-color 0.3s ease;
+}
+
+/* label dentro do input */
+.form-group label {
+  position: absolute;
+  top: 1.2em;
+  left: 0.6em;
+  color: #666;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+
+/* quando o input está focado ou preenchido */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  top: 0.2em;
+  left: 0.5em;
+  font-size: 0.75em;
+  color: #007bff;
+  background: white;
+  padding: 0 0.2em;
+}
+
+.form-group input:focus {
+  border-color: #888;
+}
+
+#container-model button {
+  margin-top: 10px;
+  padding: 0.8em;
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border: 1px solid blue;
+}
+
+#container-model button:hover {
+  background-color: #0056b3;
+}
+
