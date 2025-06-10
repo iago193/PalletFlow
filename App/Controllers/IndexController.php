@@ -10,6 +10,8 @@ class IndexController extends Action {
 
 	public function index() {
 
+		print_r($_GET);
+
 		$this->render('index');
 	}
 

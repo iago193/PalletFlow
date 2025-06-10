@@ -20,15 +20,21 @@
     <div class="container-section">
         <div class="sesao resultado">
              <div class="exibir">
-                <h2>Registros</h2>
-                <h4>Placa - Motorista (?)</h4>
+                <h2>Registros (?)</h2>
+                <h4>Nº - Placa - Motorista (?)</h4>
                 <p>Conferente - data</p>
             </div>
         </div>
         <div class="sesao btn">
              <form action="">
-                <button onclick="abrirModalCarregar()" type="button">Carregar</button>
-                <button onclick="abrirModalCarregar()" type="button">Descarregar</button>
+                <div class="form-group">
+                <button onclick="abrirModalCarregar()" type="button">
+                    <i data-lucide="upload" class="icon"></i> Carregar
+                </button>
+                <button onclick="abrirModalCarregar()" type="button" style="background-color: #007bff86">
+                    <i data-lucide="download" class="icon"></i> Descarregar
+                </button>
+                </div>
              </form>
         </div>
     </div>
@@ -36,36 +42,40 @@
 
 <div id="container-model">
   <h2>Carregar</h2>
-  <form action="">
+  <form action="/" method="get">
     <div class="form-group">
-      <input type="text" id="numero-carrego" placeholder=" " />
+      <input type="text" name="carregoNumero" placeholder=" " />
       <label for="numero-carrego">Nº Carrego</label>
     </div>
     <div class="form-group">
-      <select id="conferente" >
-        <option value="" disabled selected>Conferente/Responsavel</option>
+      <select name="conferente">
+        <option value="">Conferente/Responsavel</option>
         <option value="teste2">Teste 2</option>
         <option value="teste3">Teste 3</option>
         <option value="teste4">Teste 4</option>
       </select>
     </div>
     <div class="form-group">
-      <select id="motorista" >
-        <option value="" disabled selected>Motorista</option>
+      <select name="motorista">
+        <option value="">Motorista</option>
         <option value="teste2">Teste 2</option>
         <option value="teste3">Teste 3</option>
         <option value="teste4">Teste 4</option>
       </select>
     </div>
     <div class="form-group">
-      <input type="date" id="data" placeholder=" " />
+      <input type="text" name="placa" placeholder=" " />
+      <label for="quantidade-paletes">Placa</label>
     </div>
     <div class="form-group">
-      <input type="number" id="quantidade-paletes" placeholder=" " />
+      <input type="date" name="data" placeholder=" " />
+    </div>
+    <div class="form-group">
+      <input type="number" name="quantidade" placeholder=" " />
       <label for="quantidade-paletes">Quantidade paletes</label>
     </div>
     <div class="form-group">
-        <button >Enviar</button>
+        <button type="submit">Enviar</button>
         <button style="background-color: #007bff86" onclick="fecharModalCarregar()" type="button">Cancelar</button>
     </div>
   </form>

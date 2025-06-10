@@ -12,7 +12,7 @@
   top: 0;
   width: 60px;
   height: 100vh;
-  background-color: #0d1117;
+  background-color: aqua;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,7 +24,7 @@
 .nav-icon {
   width: 40px;
   height: 40px;
-  color: #ffffffcc;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,6 @@ section .container-section {
 
 .btn button:hover {
     cursor: pointer;
-    background-color: rgb(0, 206, 206);
 }
 
 .btn form {
@@ -95,11 +94,12 @@ section .container-section {
 .exibir {
   text-align: center;
   width: 100%;
+  overflow-y: auto;
 }
 
 .exibir h2 {
-  background-color: #f0f0f0;
   background-color: aqua;
+  background-attachment: fixed;
   padding: 5px;
   margin-bottom: 20px;
   color: white;
@@ -109,8 +109,8 @@ section .container-section {
   display: none;
   position: absolute;
   top: 20%;
-  left: 45%;
-  width: 20em;
+  left: 43%;
+  width: 25em;
   background-color: #f4f4f4;
   border-radius: 10px;
   padding: 1.5em;
