@@ -1,0 +1,18 @@
+{
+	"name": "PalletFlow",
+	"require": {
+		"php": ">= 7.0"
+	},
+	"authors": [
+		{
+			"name": "Iago bruno",
+			"email": "iago.silva6868@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"App\\": "App/",
+			"MF\\": "vendor/MF/"
+		}
+	}
+}

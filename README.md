@@ -1,2 +1,2 @@
-# PalletFlow
+# miniframework
 
