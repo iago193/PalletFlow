@@ -21,8 +21,10 @@
         <div class="sesao resultado">
              <div class="exibir">
                 <h2>Registros (?)</h2>
-                <h4>Nº - Placa - Motorista (?)</h4>
-                <p>Conferente - data</p>
+                <?php foreach($this->view->paletesUser as $userPaletes) { ?>                 
+                  <h4>Nº <?= $userPaletes['carrego'] ?> | Placa: <?= $userPaletes['placa'] ?> | Motorista: <?= $userPaletes['motorista'] ?> (<?= $userPaletes['quantidade'] ?>)</h4>
+                  <p>Conferente: <?= $userPaletes['conferente'] ?> - <?= $userPaletes['data'] ?></p> <br>
+                <?php } ?>              
             </div>
         </div>
         <div class="sesao btn">
@@ -42,7 +44,7 @@
 
 <div id="container-model">
   <h2>Carregar</h2>
-  
+
   <form action="/adicionarPaletes" method="post">
     <div class="form-group">
       <input type="text" name="carregoNumero" placeholder=" " required />
