@@ -14,6 +14,12 @@ class Route extends Bootstrap {
 			'action' => 'index'
 		);
 
+		$routes['adicionarPaletes'] = array(
+			'route' => '/adicionarPaletes',
+			'controller' => 'indexController',
+			'action' => 'adicionarPaletes'
+		);
+
 		$this->setRoutes($routes);
 	}
 

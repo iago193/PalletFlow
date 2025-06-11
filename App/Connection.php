@@ -8,7 +8,7 @@ use PDOException;
 class Connection {
 
     private static $host = 'localhost';
-    private static $dataBase = 'twitter_clone';
+    private static $dataBase = 'palletflow';
     private static $user = 'root';
     private static $senha = '';
 
